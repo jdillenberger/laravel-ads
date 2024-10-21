@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 class AdInteraction extends \Jdillenberger\LaravelBaseline\Foundation\Model
 {
     use \Jdillenberger\LaravelBaseline\Models\Traits\IsCreatedBy;
-    use \Jdillenberger\LaravelBaseline\Models\Traits\IsUpdatedBy;
     use \Jdillenberger\LaravelBaseline\Models\Traits\ScopesTenant;
     use HasFactory;
 

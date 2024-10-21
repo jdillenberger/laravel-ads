@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('ad_id')->references('id')->on('advertisements');
             $table->float('lattitude')->nullable();
             $table->float('longitude')->nullable();
-            $table->foreignId('user_id')->nullable()->references('id')->on('users');
+            $table->foreignId('created_by')->nullable()->references('id')->on('users');
             $table->string('ip_address', 45);
             $table->string('url')->nullable();
             $table->timestamps();
