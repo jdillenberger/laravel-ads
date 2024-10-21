@@ -7,7 +7,7 @@ use Jdillenberger\LaravelAds\Models\AdPlacement;
 use Jdillenberger\LaravelAds\Models\Advertisement;
 use Carbon\Carbon;
 
-class CampaignSeeder extends \Illuminate\Database\Seeder
+class AdCampaignSeeder extends \Illuminate\Database\Seeder
 {
     public function run()
     {
