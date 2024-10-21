@@ -4,5 +4,12 @@ namespace Jdillenberger\LaravelAds;
 
 class LaravelAds
 {
-    // Build your next great package.
+    public static function routes($options = [])
+    {
+        return \Illuminate\Support\Facades\Route::group($options, function () {
+    
+            include __DIR__ . '/Routes/routes.php';
+        
+        });
+    }
 }
