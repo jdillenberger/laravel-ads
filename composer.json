@@ -29,7 +29,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Jdillenberger\\LaravelAds\\": "src"
+            "Jdillenberger\\LaravelAds\\": "src",
+            "Jdillenberger\\LaravelAds\\Database\\Seeders\\": "database/seeders"
         }
     },
     "autoload-dev": {

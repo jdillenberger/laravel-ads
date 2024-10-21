@@ -1,6 +1,6 @@
 <?php
 
-namespace Jdillenberger\LaravelAds\Controllers;
+namespace Jdillenberger\LaravelAds\Database\Seeders;
 
 use Jdillenberger\LaravelAds\Models\AdCampaign;
 use Jdillenberger\LaravelAds\Models\AdPlacement;
