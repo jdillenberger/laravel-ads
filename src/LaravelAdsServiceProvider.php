@@ -22,7 +22,13 @@ class LaravelAdsServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('laravel-ads.php'),
             ], 'config');
+
+            $this->publishesMigrations([
+                __DIR__.'/../database/migrations' => database_path('migrations'),
+            ]);
         }
+
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 
     
