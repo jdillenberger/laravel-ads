@@ -1,0 +1,58 @@
+{
+    "name": "jdillenberger/laravel-ads",
+    "description": "Ads Resources",
+    "keywords": [
+        "jdillenberger",
+        "laravel-ads"
+    ],
+    "homepage": "https://github.com/jdillenberger/laravel-ads",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jan Dillenberger",
+            "email": "ads@jandillenberger.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+
+        {
+            "type": "vcs",
+            "url": "https://github.com/jdillenberger/laravel-baseline",
+            "no-api": true
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "jdillenberger/laravel-baseline": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jdillenberger\\LaravelAds\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jdillenberger\\LaravelAds\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jdillenberger\\LaravelAds\\LaravelAdsServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAds": "Jdillenberger\\LaravelAds\\LaravelAdsFacade"
+            }
+        }
+    }
+}
