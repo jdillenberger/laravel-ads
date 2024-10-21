@@ -1,6 +1,5 @@
 <?php
-
-use App\Services\Adfrodite\Controllers\AdCampaignsController;
+use Jdillenberger\LaravelAds\Controllers\AdCampaignsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('', [AdCampaignsController::class, 'list']);

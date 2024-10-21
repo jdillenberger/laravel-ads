@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Adfrodite\Controllers;
+namespace Jdillenberger\LaravelAds\Controllers;
 
 use Jdillenberger\LaravelAds\Models\AdCampaign;
 use Jdillenberger\LaravelAds\Models\Advertisement;

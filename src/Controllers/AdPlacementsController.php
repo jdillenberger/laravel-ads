@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Adfrodite\Controllers;
+namespace Jdillenberger\LaravelAds\Controllers;
 
 /**
  * @group Ad Placements
