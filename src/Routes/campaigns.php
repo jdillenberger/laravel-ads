@@ -9,4 +9,6 @@ Route::get('{campaign}', [AdCampaignsController::class, 'single'])->name('ads.ca
 Route::post('{campaign}/update', [AdCampaignsController::class, 'update'])->name('ads.campaign.update');
 Route::post('{campaign}/delete', [AdCampaignsController::class, 'delete'])->name('ads.campaign.delete');
 
-include __DIR__.'/advertisements.php';
+Route::group(['prefix' => '{campaign}/advertisements'], function () {
+    include __DIR__.'/advertisements.php';
+});

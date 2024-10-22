@@ -2,16 +2,10 @@
 use Jdillenberger\LaravelAds\Controllers\AdCampaignsController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('', [AdCampaignsController::class, 'list']);
-Route::post('create', [AdCampaignsController::class, 'create'])->name('ads.campaign.create');
-Route::get('{campaign}', [AdCampaignsController::class, 'single'])->name('ads.campaign.single');
-Route::post('{campaign}/update', [AdCampaignsController::class, 'update'])->name('ads.campaign.update');
-Route::post('{campaign}/delete', [AdCampaignsController::class, 'delete'])->name('ads.campaign.delete');
-
-Route::group(['prefix' => '{campaign}/advertisements'], function () {
-    include __DIR__.'/advertisements.php';
+Route::group(['prefix' => 'campaigns'], function () {
+    include __DIR__.'/campaigns.php';
 });
 
-Route::group(['prefix' => '{campaign}/placement'], function () {
+Route::group(['prefix' => 'placements'], function () {
     include __DIR__.'/placements.php';
 });
