@@ -90,8 +90,7 @@ class Advertisement extends \Jdillenberger\LaravelBaseline\Foundation\Model
     {
         return $this->interactions()->create(array_merge([
             'type' => 'impression',
-            'ip_address' => request()->ip(),
-            'user_id' => Auth::id() ?? null,
+            'ip_address' => request()->ip()
         ], $data));
     }
 }

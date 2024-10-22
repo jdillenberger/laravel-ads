@@ -17,7 +17,6 @@ class AdInteraction extends \Jdillenberger\LaravelBaseline\Foundation\Model
         'latitude',
         'longitude',
         'ip_address',
-        'user_id',
         'url',
     ];
 
@@ -42,6 +41,6 @@ class AdInteraction extends \Jdillenberger\LaravelBaseline\Foundation\Model
      */
     public function user(): MorphTo
     {
-        return $this->belongsTo(getBaselineUserModel(), 'user_id');
+        return $this->belongsTo(getBaselineUserModel(), 'created_by');
     }
 }
